@@ -1,12 +1,23 @@
-
+import { useState } from 'react'
 import './App.css'
 
 function App() {
-let counter = 5
+
+  let [counter, setCounter] = useState(5)
+// let counter = 5
 const addValue = () => {
-  counter++
   console.log("Clicked", counter);
-  
+  if(counter<20)
+  setCounter(counter+1)
+  else
+  alert("Maximum counter value reached!!!!....")
+}
+const rmvValue = () => {
+  console.log("Removed", counter);
+  if(counter==0)
+    alert("Minimum counter value reached!!!!....")
+    else
+    setCounter(counter-1)
   
 }
   return (
@@ -16,8 +27,7 @@ const addValue = () => {
 
       <button onClick = {addValue}>Add Value {counter}</button>
       <br />
-      <button>Rmv Value {counter}</button>
-
+      <button onClick = {rmvValue}>Rmv Value {counter}</button>
       <p>Footer: {counter}</p>
 
     </>
