@@ -6,17 +6,12 @@ function App() {
   let [counter, setCounter] = useState(5)
 // let counter = 5
 const addValue = () => {
-  if(counter<20)
-  setCounter(counter+1)
-  else
-  alert("Maximum counter value reached!!!!....")
+  if(counter<20) setCounter(counter+1)
+  else alert("Maximum counter value reached!!!!....")
 }
 const rmvValue = () => {
-  if(counter==0)
-    alert("Minimum counter value reached!!!!....")
-    else
-    setCounter(counter-1)
-  
+  if(counter==0) alert("Minimum counter value reached!!!!....")
+  else setCounter(counter-1)
 }
   return (
     <>
