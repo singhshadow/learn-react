@@ -6,14 +6,12 @@ function App() {
   let [counter, setCounter] = useState(5)
 // let counter = 5
 const addValue = () => {
-  console.log("Clicked", counter);
   if(counter<20)
   setCounter(counter+1)
   else
   alert("Maximum counter value reached!!!!....")
 }
 const rmvValue = () => {
-  console.log("Removed", counter);
   if(counter==0)
     alert("Minimum counter value reached!!!!....")
     else
