@@ -22,7 +22,7 @@ const [color, setColor] = useState("grey")
             <button
             onClick={() => setColor("green")}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "green"}}>Green</button>
-            
+
             <button
             onClick={() => setColor("yellow")}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "yellow"}}>yellow</button>
@@ -34,7 +34,7 @@ const [color, setColor] = useState("grey")
             <button
             onClick={() => setColor("orange")}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "orange"}}>Orange</button>
-                        
+
             <button
             onClick={() => setColor("grey")}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "grey"}}>Grey</button>
@@ -46,7 +46,7 @@ const [color, setColor] = useState("grey")
             <button
             onClick={() => setColor("lavender")}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "lavender"}}>Lavender</button>
-
+            
           </div>
         </div>
       </div>
